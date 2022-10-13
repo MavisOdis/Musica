@@ -34,7 +34,7 @@ export default function App() {
 
   if (!appIsReady) return null;
   return (
-      <HomeScreen/>
+      <HomeScreen onLayout={onLayout}/>
   );
 }
 
