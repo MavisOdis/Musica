@@ -60,14 +60,22 @@ export default Home = () => {
 
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                     {[1,2,3].map((item, idx) => <View key={idx} style={{
-                        width:windowWidth-80,
-                        height:233,
+                        width:windowWidth-100,
                         borderRadius:10,
                         backgroundColor:'#1A1E1F',
                         marginTop:17,
-                        marginRight:17
+                        marginRight:17,
+                        borderWidth:1
                     }}>
-                        
+                        <View style={{marginLeft:14}}>
+                            <Image source={require('../../assets/frame1.png')} style={{
+                                width:108, height:99, marginTop:15
+                            }}/>
+                            <Text style={{color:'#fff',fontSize:17,fontWeight:'400',paddingTop:15}}>Golden age of 80s</Text>
+                            <Text style={{color:'rgba(255, 255, 255, 0.5)',fontSize:12,fontWeight:'400',paddingTop:6}}>Sean swadder</Text>
+                            <Text style={{color:'rgba(255, 255, 255, 0.5)',fontSize:12,fontWeight:'400',paddingTop:24,paddingBottom:23}}>2:34:45</Text>
+
+                        </View>
                     </View>)}
                     
                 </ScrollView>
