@@ -21,16 +21,16 @@ export default Home = () => {
             backgroundColor: '#1E1E1E'
         }}>
             <ScrollView style={{marginTop:30.75}} showsVerticalScrollIndicator={false}>
-               <View style={{marginHorizontal:24}}>
+                <View style={{marginHorizontal:24}}>
                 <Header />
 
-               <View style={{
-                height:503,
-                width:windowWidth-48,
-                backgroundColor:'#609EAF',
-                borderRadius:10,
-                marginTop:26.5
-               }}>  
+                <View style={{
+                    height:503,
+                    width:windowWidth-48,
+                    backgroundColor:'#609EAF',
+                    borderRadius:10,
+                    marginTop:26.5
+                }}>  
                     <View style={{paddingHorizontal:33}}>
                         <Text style={{
                             color:'#fff',fontSize:12, paddingTop:32, fontWeight:'400', fontFamily:'Quicksand'
@@ -101,9 +101,9 @@ export default Home = () => {
                             </View>
                             <View style={{
                                 width:37,height:37,borderWidth:1,borderColor:'rgba(255, 255, 255, 0.11)',
-                                borderRadius:20,marginTop:15,marginRight:14
+                                borderRadius:20,marginTop:15,marginRight:14,alignItems:'center',justifyContent:'center'
                                 }}>
-                                    <Ionicons name="play" size={14} color="#FACD66" />  
+                                    <Ionicons name="heart-outline" size={20} color="#FACD66" />  
                             </View>
                         </View>
                     </View>)}
@@ -141,9 +141,6 @@ export default Home = () => {
                 position:'absolute',
                 bottom:'-0.08%',
                 flexDirection:'row'
-                // alignItems:'center'
-                // borderWidth:1,
-                // borderColor:'#1D2123'
                }}>
                     <View style={{marginLeft:30}}>
                         <Image source={require('../../assets/frame2.png')} 
@@ -151,7 +148,7 @@ export default Home = () => {
                         />  
                     </View>
 
-                    <View>
+                    <View style={{marginLeft:12.23,marginRight:90}}>
                         <Text style={{
                             color:'#fff',fontSize:16.4,fontWeight:'700',paddingTop:42.65,
                             fontFamily:'Quicksand'
@@ -166,16 +163,16 @@ export default Home = () => {
                         </Text>
                     </View>
 
-                    <View>
+                    <View style={{marginTop:45.08,flexDirection:'row'}}>
                         <View style={{
                             width:37,height:37,borderWidth:1,borderColor:'rgba(255, 255, 255, 0.11)',
-                            borderRadius:20,marginTop:15,marginRight:14,backgroundColor:'#FACD66',
+                            borderRadius:20,marginRight:14,backgroundColor:'#FACD66',
                             justifyContent:'center',alignItems:'center'
                             }}>
                                 <Ionicons name="play" size={16} color="#fff" /> 
                         </View>
-                    </View>
-                    <Ionicons name="play-skip-forward-sharp" size={20} color="#fff" />  
+                        <Ionicons name="play-skip-forward-sharp" size={20} color="#fff" style={{marginTop:7}} />
+                    </View>  
 
                </View>
             </ScrollView>
