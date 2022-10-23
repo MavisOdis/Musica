@@ -3,6 +3,7 @@ import * as Font from "expo-font";
 import * as SplashScreen from 'expo-splash-screen';
 import Preview from './assets/load-image.svg';
 import HomeScreen from './screens/HomeScreen';
+import StackNav from './Navigation';
 
 
 export default function App() {
@@ -34,7 +35,7 @@ export default function App() {
 
   if (!appIsReady) return null;
   return (
-      <HomeScreen onLayout={onLayout}/>
+      <StackNav onLayout={onLayout}/>
   );
 }
 
