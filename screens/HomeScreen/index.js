@@ -14,15 +14,16 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 
 
 
-export default Home = () => {
+export default Home = ({navigation}) => {
     return(
         <SafeAreaView style={{
             flex:1,
-            backgroundColor: '#1E1E1E'
+            backgroundColor: '#1E1E1E',
+            height: windowWidth
         }}>
             <ScrollView style={{marginTop:30.75}} showsVerticalScrollIndicator={false}>
                 <View style={{marginHorizontal:24}}>
-                <Header />
+                <Header navigation={navigation}/>
 
                 <View style={{
                     height:503,

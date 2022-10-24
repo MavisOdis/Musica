@@ -5,7 +5,7 @@ const Drawer = createDrawerNavigator();
 
 export default function MyDrawerMenu() {
   return (
-    <Drawer.Navigator>
+    <Drawer.Navigator screenOptions={{ headerShown: false, swipeEnabled: false }}>
       <Drawer.Screen name="Home" component={HomeScreen} />
     </Drawer.Navigator>
   );
