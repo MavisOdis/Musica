@@ -10,8 +10,8 @@ const CustomDrawer = (props) => {
             // contentContainerStyle={{backgroundColor: '#1A1E1F'}}
             >
                 <DrawerItemList {...props} />
-                <TouchableOpacity style={{marginBottom:30,marginLeft:15,flexDirection:'row'}}>
-                    <Ionicons name="log-out" size={20} color="rgba(239, 238, 224, 0.25)" style={{top:3,marginRight:5}} />  
+                <TouchableOpacity style={{marginBottom:30,marginLeft:20,flexDirection:'row'}}>
+                    <Ionicons name="exit" size={25} color="rgba(239, 238, 224, 0.25)" style={{top:3,marginRight:8}} />  
                     <Text style={{fontSize:17,fontWeight:'400',fontFamily:'Quicksand',color:'rgba(239, 238, 224, 0.25)'}}>
                         Log out
                     </Text>
