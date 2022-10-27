@@ -1,8 +1,14 @@
 import React from "react";
-import { View, Text, SafeAreaView, Image, ScrollView, ImageBackground } from "react-native";
+import { View, Text, SafeAreaView, Image, ScrollView, ImageBackground, TouchableOpacity } from "react-native";
 import Header from "../../components/Header";
 import { windowWidth } from "../../utils/Dimensions";
 import { SimpleLineIcons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
+
+
+
+
+
 
 const Album = ({navigation}) => {
     return(
@@ -17,7 +23,21 @@ const Album = ({navigation}) => {
                     source={require('../../assets/frame8.png')} style={{width:windowWidth, height:350}} resizeMode='stretch'>
 
                 </ImageBackground> */}
-                <Header navigation={navigation}/>
+                <View style={{flexDirection:'row', justifyContent:'space-between'}}>
+                    <View style={{flexDirection:'row',alignItems:'center'}}>
+                        <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
+                            <Image source={require('../../assets/menu.png')} style={{
+                                width:24, height:24,marginRight:24
+                            }}/>
+                        </TouchableOpacity>
+                        <Image source={require('../../assets/logo.png')} style={{
+                            width:34, height:34
+                        }}/>
+                    </View>
+                    <TouchableOpacity>
+                        <Ionicons name="search" size={20} color={'#fff'} />
+                    </TouchableOpacity>
+                </View>
                 <Image source={require('../../assets/frame8.png')} 
                     style={{
                         width:windowWidth-40, 

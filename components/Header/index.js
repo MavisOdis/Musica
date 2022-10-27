@@ -1,13 +1,14 @@
 import React from "react";
 import { View, Image, TouchableOpacity } from "react-native";
 import Ionicons from '@expo/vector-icons/Ionicons';
+import {DrawerActions} from '@react-navigation/native'
 
 
 export default function Header ({navigation}) {
     return(
         <View style={{flexDirection:'row', justifyContent:'space-between'}}>
             <View style={{flexDirection:'row',alignItems:'center'}}>
-                <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
+                <TouchableOpacity onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}>
                     <Image source={require('../../assets/menu.png')} style={{
                         width:24, height:24,marginRight:24
                     }}/>
