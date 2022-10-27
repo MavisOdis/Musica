@@ -4,7 +4,8 @@ import {
      Text, 
      SafeAreaView,
      Image,
-     ScrollView
+     ScrollView,
+     TouchableOpacity
 } from "react-native";
 import { windowWidth } from "../../utils/Dimensions";
 import Header from "../../components/Header";
@@ -78,7 +79,9 @@ export default Home = ({navigation}) => {
                         marginRight:17,
                         borderWidth:1
                     }}>
-                        <View style={{marginLeft:14, flexDirection:'row'}}>
+                        <TouchableOpacity 
+                            onPress={()=> navigation.navigate('Album')}
+                            style={{marginLeft:14, flexDirection:'row'}}>
                             <View style={{paddingRight:70}}>
                                 {item.image}
                                 <Text style={{
@@ -106,7 +109,7 @@ export default Home = ({navigation}) => {
                                 }}>
                                     <Ionicons name="heart-outline" size={20} color="#FACD66" />  
                             </View>
-                        </View>
+                        </TouchableOpacity>
                     </View>)}
                     
                 </ScrollView>
