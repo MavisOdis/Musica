@@ -33,6 +33,20 @@ export default Home = ({navigation}) => {
                     borderRadius:10,
                     marginTop:26.5
                 }}>  
+                    <View style={{flexDirection:'row',paddingHorizontal:33,top:420,position:'absolute',zIndex:3}}>
+                        <Image source={require('../../assets/user1.png')} style={{width:34,height:34}} />
+                        <Image source={require('../../assets/user2.png')} style={{width:34,height:34,marginLeft:-20}} />
+                        <Image source={require('../../assets/user3.png')} style={{width:34,height:34,marginLeft:-20}} />
+                        <Image source={require('../../assets/user4.png')} style={{width:34,height:34,marginLeft:-20}} />
+                        <Image source={require('../../assets/user5.png')} style={{width:34,height:34,marginLeft:-20}} />
+
+                        <View style={{marginLeft:10,flexDirection:'row',alignItems:'center'}}>
+                            <Image source={require('../../assets/like.png')} style={{width:22.67,height:22.67,tintColor:'#fff',top:2}} />
+                            <Text style={{fontSize:23.8,color:'#fff',fontFamily:'Quicksand',marginLeft:10}}>33k Likes</Text>
+                        </View>
+                        
+
+                    </View>
                     <View style={{paddingHorizontal:33}}>
                         <Text style={{
                             color:'#fff',fontSize:12, paddingTop:32, fontWeight:'400', fontFamily:'Quicksand'

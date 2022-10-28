@@ -7,6 +7,7 @@ import Radio from '../../screens/Radio';
 import MusicVideos from '../../screens/MusicVideos';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { MaterialIcons } from '@expo/vector-icons';
+import Album from '../../screens/Album';
 
 
 const Drawer = createDrawerNavigator();
@@ -51,6 +52,9 @@ export default function MyDrawerMenu() {
           <Ionicons name='person' size={20} color={color} />
         )
       }}/>
+      <Drawer.Screen name='Album' component={Album} options={{
+        drawerItemStyle: {height:0}
+      }} />
     </Drawer.Navigator>
   );
 }
