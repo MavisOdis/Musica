@@ -7,7 +7,7 @@ import {
      ScrollView,
      TouchableOpacity
 } from "react-native";
-import { windowWidth } from "../../utils/Dimensions";
+import { windowHeight, windowWidth } from "../../utils/Dimensions";
 import Header from "../../components/Header";
 import Ionicons from '@expo/vector-icons/Ionicons';
 
@@ -20,7 +20,7 @@ export default Home = ({navigation}) => {
         <SafeAreaView style={{
             flex:1,
             backgroundColor: '#1E1E1E',
-            height: windowWidth
+            height: windowHeight
         }}>
             <ScrollView style={{marginTop:30.75}} showsVerticalScrollIndicator={false}>
                 <View style={{marginHorizontal:24}}>

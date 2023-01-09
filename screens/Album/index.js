@@ -19,10 +19,7 @@ const Album = ({navigation}) => {
             <ScrollView 
                 showsVerticalScrollIndicator={false}
                 style={{marginTop:30.75,marginHorizontal:24,marginBottom:20}}>
-                {/* <ImageBackground 
-                    source={require('../../assets/frame8.png')} style={{width:windowWidth, height:350}} resizeMode='stretch'>
-
-                </ImageBackground> */}
+            
                 <View style={{flexDirection:'row', justifyContent:'space-between'}}>
                     <View style={{flexDirection:'row',alignItems:'center'}}>
                         <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
